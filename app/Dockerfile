@@ -1,6 +1,7 @@
 FROM python:3.10-slim-buster
 
 RUN apt update && apt upgrade -y
+RUN apt install dash -y
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
@@ -14,4 +15,4 @@ RUN chown -R non-root:non-root .
 USER 1000
 
 EXPOSE 8000
-ENTRYPOINT  python3 -m app.py
+ENTRYPOINT  python3 app.py
