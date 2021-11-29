@@ -1,7 +1,7 @@
 apiVersion: radix.equinor.com/v1
 kind: RadixApplication
 metadata:
-  name: radix-python-dash-example-satr
+  name: radix-python-dash-example
 spec:
   environments:
     - name: dev
